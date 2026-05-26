@@ -93,44 +93,11 @@ Both datasets follow the format consumed by `prepro.read_cdr` / `prepro.read_gda
 bash scripts/run_cdr.sh
 ```
 
-Equivalent to:
-
-```bash
-python train_cdr.py --data_dir ./dataset/cdr \
-  --transformer_type bert \
-  --train_file train_filter.data \
-  --dev_file dev_filter.data \
-  --test_file test_filter.data \
-  --train_batch_size 4 --test_batch_size 8 \
-  --gradient_accumulation_steps 1 \
-  --num_labels 1 --num_class 2 \
-  --learning_rate 2e-5 --max_grad_norm 1.0 \
-  --warmup_ratio 0.06 --num_train_epochs 30.0 \
-  --seed 66
-```
-
 ### GDA
 
 ```bash
 bash scripts/run_gda.sh
 ```
-
-Equivalent to:
-
-```bash
-python train_gda.py --data_dir ./dataset/gda \
-  --transformer_type bert \
-  --model_name_or_path allenai/scibert_scivocab_cased \
-  --train_file train.data --dev_file dev.data --test_file test.data \
-  --train_batch_size 4 --test_batch_size 8 \
-  --gradient_accumulation_steps 4 \
-  --num_labels 1 --num_class 2 \
-  --learning_rate 2e-5 --max_grad_norm 1.0 \
-  --warmup_ratio 0.06 --num_train_epochs 10.0 \
-  --evaluation_steps 500 --seed 66
-```
-
-Default encoder is **SciBERT** (`allenai/scibert_scivocab_cased`). Training logs are pushed to [Weights & Biases](https://wandb.ai/) if `wandb` is configured.
 
 ## Citation
 
