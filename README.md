@@ -104,12 +104,19 @@ bash scripts/run_gda.sh
 If you use this code or build on this work, please cite:
 
 ```bibtex
-@inproceedings{pham2025anavit,
-  title     = {ANAVIT: Enhancing Document-Level Relation Extraction with Anaphor Nodes and Visual Transformation},
-  author    = {Pham, An Duc Vinh and Pham, Quynh-Trang and Dang, Thi T.},
-  booktitle = {International Conference on Knowledge and Systems Engineering (KSE)},
-  year      = {2025}
-}
+@INPROCEEDINGS{11309552,
+  author={Pham, An Duc Vinh and Thi, Quynh-Trang Pham and Dang, Thanh-Hai},
+  booktitle={2025 17th International Conference on Knowledge and System Engineering (KSE)}, 
+  title={ANAVIT: Enhancing Document-Level Relation Extraction with Anaphor Nodes and Visual Transformation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Current transformer-based models for document-level relation extraction effectively utilize techniques such as adaptive thresholding and localized context pooling. However, their performance is often limited by an inability to resolve anaphoric references or identify global relational patterns. This presents a significant challenge in domains like biomedicine, where understanding complex relationships requires analyzing information across multiple sentences. We introduce ANAVIT (Anaphor-Assisted Visual Transformation). Our method enhances DocRE through a dual-component architecture. First, it constructs a document graph incorporating dedicated anaphor nodes, employing Graph Attention Networks to explicitly model pronoun-entity coreferences. Second, it applies a visual transformation using convolutional neural networks andmulti-head attention to the resulting relation matrices, treating them as spatial patterns to capture global dependencies. We evaluated ANAVIT on the standard CDR and GDA biomedical datasets. Experiments show that our method achieves new state-of-theart performance on CDR with a 79.1 % F1 score, substantially outperforming the ATLOP baseline of 69.4 %. This performance gain is particularly notable in documents that feature complex coreference chains, confirming the efficacy of our graph-based enhancements for anaphora resolution. Our source code is available at: https://github.com/vinhpad/anavit},
+  keywords={Knowledge engineering;Visualization;Current transformers;Biological system modeling;Source coding;Linguistics;Performance gain;Feature extraction;Graph neural networks;Standards;Document-Level Relation Extraction;Graph Neural Networks;Anaphor Resolution;visual transformation;Adaptive Thresholding},
+  doi={10.1109/KSE68178.2025.11309552},
+  ISSN={2694-4804},
+  month={Nov},}
 ```
 
 ## Acknowledgments
