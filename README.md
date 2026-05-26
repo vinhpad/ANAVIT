@@ -6,7 +6,7 @@
 
 Official implementation of the paper
 **"ANAVIT: Enhancing Document-Level Relation Extraction with Anaphor Nodes and Visual Transformation"**
-*An Duc Vinh Pham, Quynh-Trang Pham, Thi T. Dang* — KSE 2025.
+*An Duc Vinh Pham, Quynh-Trang Pham Thi, Thanh-Hai Dang* — KSE 2025.
 
 ---
 
